@@ -40,6 +40,30 @@ const aumentoDeSueldo = (sueldo, porcAumento) =>    {
 }
 
 console.log((aumentoDeSueldo(sueldo, porcAumento)))
+
+//Ejercicio 3
+//Crear una funcion que reciba como parametro un nombre, una edad, una profesion, y un pais y retorne un string con la concatenacion de los datos ingresados. Probar su funcionamiento.
+const fullname = prompt("Escribe tu nombre completo:")
+const age = prompt("Escribe tu edad:")
+const profession = prompt("Escriba tu profesion:")
+const country = prompt("Escribe tu pais de residencia:")
+
+const datosUsuario = (fullname, age, profession, country) =>    {
+    const datos = (`Hola, mi nombre es ${fullname}, tengo ${age} años de edad. Soy ${profession} y actualemte resido en ${country}`)
+    return datos
+}
+
+console.log(datosUsuario(fullname, age, profession, country))
+
+typeof datosUsuario
+
+typeof fullname
+typeof age
+typeof profession
+typeof country
+
+//Ejercicio 4
+//
      
 
 
