@@ -63,7 +63,18 @@ typeof profession
 typeof country
 
 //Ejercicio 4
-//
+//Crear un ejericio que reciba como parametro un precio y devuelva el precio + el iva.
+const precioProducto = Number(prompt("Escriba le precio de su producto:"))
+
+const productoConIva = (precioProducto) =>  {
+    const calculoIva = (((precioProducto*21)/100) + precioProducto)
+    return calculoIva
+}
+
+console.log(productoConIva(precioProducto))
+
+
+
      
 
 
