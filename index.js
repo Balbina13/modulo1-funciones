@@ -11,23 +11,37 @@ console.log(welcome(nombre))
 
 //Ejercicio 1:
 //Crear una funcion que reciba como parámetro dos numeros y devuelva el resultado de cada calculo aritmético:
+
+const numero1 = Number(prompt("Escriba el primer numero:"))
+const numero2 = Number(prompt("Escriba el segundo numero:"))
+
 const disminucion = (numero1, numero2) => {
     const restar = (numero1 - numero2)
     return restar
 }
 
+console.log(disminucion(numero1, numero2))
+
 const adicion = (numero1, numero2) =>  {
     const sumar = (numero1 + numero2)
     return sumar
 }
+
+console.log(adicion(numero1, numero2))
+
 const division = (numero1, numero2) =>  {
     const dividir = (numero1 / numero2)
     return dividir
 }
+
+console.log(division(numero1, numero2))
+
 const producto = (numero1, numero2) =>  {
     const multiplicar = (numero1 * numero2)
     return multiplicar
 }
+
+console.log(producto(numero1, numero2))
 
 //Ejercicio 2:
 //Crea una funcion que recibe como parametro un sueldo y un numero que representa el porcentaje de aumento. La funcion debe devolver el sueldo mas el aumento.
@@ -73,8 +87,22 @@ const productoConIva = (precioProducto) =>  {
 
 console.log(productoConIva(precioProducto))
 
+//Ejercicio 5
+//a- Como hacer para usar las funciones del ejercicio 1 pero que los numeros los pidamos al usuario?
+//Lo coloque en ese mismo ejercicio.
+//b- repetir situacion pero para el ejercicio 2 y ejercicio 3
+//Ya realizado con anterioridad
 
+//BONUS
+//Crear una funcion contador() que cada vez que se ejecute, sume 1 unidad a la variable.
 
-     
+const nroClientes = Number(prompt("Ingrese el numero de personas que ingreso al circo:"))
+
+const ingresoxMinuto = (nroClientes) =>     {
+    const personasIn = (nroClientes + 1)
+    return personasIn
+}     
+
+console.log(ingresoxMinuto(nroClientes))
 
 
