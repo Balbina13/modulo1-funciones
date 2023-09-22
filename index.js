@@ -1,6 +1,7 @@
 //EJERCITACION FUNCIONES:
 //Ejercicio 0:
 //Crear una funcion que reciba como parametro un nombre y muestre por consola un saludo a esa persona.
+
 const nombre = prompt("Ingrese su nombre:")
 
 const welcome = (nombre) => {
@@ -92,6 +93,57 @@ console.log(productoConIva(precioProducto))
 //Lo coloque en ese mismo ejercicio.
 //b- repetir situacion pero para el ejercicio 2 y ejercicio 3
 //Ya realizado con anterioridad
+
+
+const numero3 = Number(prompt("Escriba el tercer numero:"))
+const numero4 = Number(prompt("Escriba el cuarto numero:"))
+
+const operaciones = (numero3, numero4) => 
+{
+    const restar = (numero3 - numero4)
+
+    const sumar = (numero3 + numero4)
+
+    const dividir = (numero3 / numero4)
+
+    const multiplicar = (numero3 * numero4)
+
+    const resultado = ("El resultado de la resta es: "+ restar + ", el resultado de la suma es: " + sumar + ", el resultado de la división es: " + dividir +
+    + ", el resultado del producto es: " + multiplicar ) 
+
+    return (resultado)
+
+}
+
+/*
+const disminucion2 = (numero3, numero4) => {
+    const restar = (numero3 - numero4)
+    return restar
+}
+
+console.log(disminucion(numero3, numero4))
+
+const adicion2 = (numero3, numero4) =>  {
+    const sumar = (numero3 + numero4)
+    return sumar
+}
+
+console.log(adicion(numero3, numero4))
+
+const division2 = (numero3, numero4) =>  {
+    const dividir = (numero3 / numero4)
+    return dividir
+}
+
+console.log(division(numero3, numero4))
+
+const producto2 = (numero3, numero4) =>  {
+    const multiplicar = (numero1 * numero4)
+    return multiplicar
+}
+*/
+
+console.log(operaciones(numero3, numero4))
 
 //BONUS
 //Crear una funcion contador() que cada vez que se ejecute, sume 1 unidad a la variable.
